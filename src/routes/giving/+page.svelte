@@ -4,6 +4,11 @@
 	import { Mail, CreditCard } from "@lucide/svelte";
 </script>
 
+<svelte:head>
+	<title>Online Giving - In-House Christian Foursquare Church</title>
+	<meta name="description" content="Support In-House Christian Foursquare Church through online giving. Contribute to our ministry and help us bring people to Jesus in Surrey, BC." />
+</svelte:head>
+
 <div class="container mx-auto px-4 py-8 max-w-4xl">
 	<div class="text-center">
 		<!-- Header -->

@@ -4,6 +4,11 @@
 	import { FileText, Users, Droplet } from "@lucide/svelte";
 </script>
 
+<svelte:head>
+	<title>Forms - In-House Christian Foursquare Church</title>
+	<meta name="description" content="Download important forms from In-House Christian Foursquare Church including membership applications, permission forms, and baptism information." />
+</svelte:head>
+
 <div class="container mx-auto px-4 py-8">
 	<section class="max-w-6xl mx-auto">
 		<div class="text-center mb-16">

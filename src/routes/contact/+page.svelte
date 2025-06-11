@@ -9,6 +9,11 @@
 	import { Church, Mail, MapPin, School } from "@lucide/svelte";
 </script>
 
+<svelte:head>
+	<title>Contact Us - In-House Christian Foursquare Church</title>
+	<meta name="description" content="Get in touch with In-House Christian Foursquare Church. Find our service times, locations in Surrey BC, and contact information." />
+</svelte:head>
+
 <div class="container mx-auto px-4 py-8">
 	<section class="max-w-6xl mx-auto">
 		<div class="text-center mb-16">

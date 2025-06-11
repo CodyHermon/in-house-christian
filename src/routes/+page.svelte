@@ -4,6 +4,11 @@
 	import { School, Church, BookOpen } from "@lucide/svelte";
 </script>
 
+<svelte:head>
+	<title>In-House Christian Foursquare Church - Bringing People to Jesus</title>
+	<meta name="description" content="Welcome to In-House Christian Foursquare Church in Surrey, BC. Our mission is to bring our family, friends, and neighbours into a loving relationship with Jesus." />
+</svelte:head>
+
 <!-- Hero Section -->
 <section
 	class="text-center py-16 bg-cover bg-center bg-no-repeat relative min-h-screen"

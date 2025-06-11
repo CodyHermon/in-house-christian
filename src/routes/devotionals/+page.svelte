@@ -2,6 +2,11 @@
 	import OptimizedImage from "$lib/components/ui/OptimizedImage.svelte";
 </script>
 
+<svelte:head>
+	<title>Fall In Love With God - Devotionals | In-House Christian Foursquare Church</title>
+	<meta name="description" content="Read 'Fall In Love With God' devotional by Kahlil Hermon. Discover how to overcome sin and draw closer to God through faith and spiritual discipline." />
+</svelte:head>
+
 <div class="container mx-auto px-4 py-8 max-w-4xl">
 	<!-- Header -->
 	<header class="text-center mb-16">
