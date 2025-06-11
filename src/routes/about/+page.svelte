@@ -5,7 +5,10 @@
 
 <svelte:head>
 	<title>Our Team - In-House Christian Foursquare Church</title>
-	<meta name="description" content="Meet our pastoral team at In-House Christian Foursquare Church. Learn about Pastor Val Batulan, Pastor Harrison Pride, and Pastor Youlein Bajarias." />
+	<meta
+		name="description"
+		content="Meet our pastoral team at In-House Christian Foursquare Church. Learn about Pastor Val Batulan, Pastor Harrison Pride, and Pastor Youlein Bajarias."
+	/>
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8">

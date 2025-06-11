@@ -6,7 +6,10 @@
 
 <svelte:head>
 	<title>Forms - In-House Christian Foursquare Church</title>
-	<meta name="description" content="Download important forms from In-House Christian Foursquare Church including membership applications, permission forms, and baptism information." />
+	<meta
+		name="description"
+		content="Download important forms from In-House Christian Foursquare Church including membership applications, permission forms, and baptism information."
+	/>
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8">

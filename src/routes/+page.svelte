@@ -6,7 +6,10 @@
 
 <svelte:head>
 	<title>In-House Christian Foursquare Church - Bringing People to Jesus</title>
-	<meta name="description" content="Welcome to In-House Christian Foursquare Church in Surrey, BC. Our mission is to bring our family, friends, and neighbours into a loving relationship with Jesus." />
+	<meta
+		name="description"
+		content="Welcome to In-House Christian Foursquare Church in Surrey, BC. Our mission is to bring our family, friends, and neighbours into a loving relationship with Jesus."
+	/>
 </svelte:head>
 
 <!-- Hero Section -->

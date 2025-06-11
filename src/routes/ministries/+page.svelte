@@ -5,7 +5,10 @@
 
 <svelte:head>
 	<title>Ministries - In-House Christian Foursquare Church</title>
-	<meta name="description" content="Discover our ministries at In-House Christian Foursquare Church including worship services, children's ministry, youth programs, and community outreach." />
+	<meta
+		name="description"
+		content="Discover our ministries at In-House Christian Foursquare Church including worship services, children's ministry, youth programs, and community outreach."
+	/>
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8">
