@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Button } from "$lib/components/ui/button";
 	import { Sheet, SheetContent, SheetTrigger } from "$lib/components/ui/sheet";
 	import { page } from "$app/state";
 	import { Menu } from "@lucide/svelte";
@@ -26,11 +25,7 @@
 		<div class="flex justify-between items-center h-20 py-4">
 			<div class="flex items-center flex-1 min-w-0">
 				<a href="/" class="flex items-center space-x-3">
-					<img
-						src="/favicon.png"
-						alt="Grace Community Church Logo"
-						class="h-14 w-14 flex-shrink-0"
-					/>
+					<img src="/logo.png" alt="Foursquare Church Logo" class="h-14 w-14 flex-shrink-0" />
 					<div class="text-lg lg:text-xl font-bold font-heading hidden min-[300px]:block">
 						In-House Christian Foursquare Church
 					</div>
