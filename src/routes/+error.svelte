@@ -4,9 +4,9 @@
 	import { page } from "$app/state";
 	import { Home, ArrowLeft, Church } from "@lucide/svelte";
 
-	// Get error details
-	$: status = page.status;
-	$: message = page.error?.message || "Something went wrong";
+	// Get error details safely
+	let status = $derived(page.status || 404);
+	let message = $derived(page.error?.message || "Something went wrong");
 </script>
 
 <svelte:head>
