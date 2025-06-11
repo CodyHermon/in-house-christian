@@ -1,5 +1,6 @@
 <script>
 	import { Card, CardContent, CardDescription, CardTitle } from "$lib/components/ui/card";
+	import OptimizedImage from "$lib/components/ui/OptimizedImage.svelte";
 </script>
 
 <div class="container mx-auto px-4 py-8">
@@ -17,10 +18,12 @@
 					<div
 						class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary shadow-lg group-hover:border-primary/80 transition-all duration-300"
 					>
-						<img
+						<OptimizedImage
 							src="/val.avif"
 							alt="Pastor Val Batulan"
 							class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+							fetchpriority="high"
+							loading="eager"
 						/>
 					</div>
 					<CardTitle class="text-2xl mb-2">Pastor Val Batulan</CardTitle>
@@ -45,7 +48,7 @@
 					<div
 						class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary shadow-lg group-hover:border-primary/80 transition-all duration-300"
 					>
-						<img
+						<OptimizedImage
 							src="/harrison.avif"
 							alt="Pastor Harrison Pride"
 							class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
@@ -72,7 +75,7 @@
 					<div
 						class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary shadow-lg group-hover:border-primary/80 transition-all duration-300"
 					>
-						<img
+						<OptimizedImage
 							src="/youlein.avif"
 							alt="Pastor Youlein Bajarias"
 							class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
@@ -102,7 +105,7 @@
 					<div
 						class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary shadow-lg group-hover:border-primary/80 transition-all duration-300"
 					>
-						<img
+						<OptimizedImage
 							src="/jhun.avif"
 							alt="Pastor Jhun Agarpao"
 							class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"

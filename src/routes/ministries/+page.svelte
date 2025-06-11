@@ -1,5 +1,6 @@
 <script>
 	import { Card, CardContent, CardDescription, CardTitle } from "$lib/components/ui/card";
+	import OptimizedImage from "$lib/components/ui/OptimizedImage.svelte";
 </script>
 
 <div class="container mx-auto px-4 py-8">
@@ -18,7 +19,13 @@
 				class="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
 			>
 				<div class="aspect-video overflow-hidden">
-					<img src="/ministries_1.avif" alt="KRIB" class="w-full h-full object-cover object-top" />
+					<OptimizedImage
+						src="/ministries_1.avif"
+						alt="KRIB"
+						class="w-full h-full object-cover object-top"
+						fetchpriority="high"
+						loading="eager"
+					/>
 				</div>
 				<CardContent class="p-6">
 					<CardTitle class="text-2xl mb-3">KRIB (Children's Ministry)</CardTitle>
@@ -36,7 +43,11 @@
 				class="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
 			>
 				<div class="aspect-video overflow-hidden">
-					<img src="/ministries_2.avif" alt="DIGS" class="w-full h-full object-cover object-top" />
+					<OptimizedImage
+						src="/ministries_2.avif"
+						alt="DIGS"
+						class="w-full h-full object-cover object-top"
+					/>
 				</div>
 				<CardContent class="p-6">
 					<CardTitle class="text-2xl mb-3">DIGS Jr. / DIGS</CardTitle>
@@ -53,7 +64,7 @@
 				class="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
 			>
 				<div class="aspect-video overflow-hidden">
-					<img
+					<OptimizedImage
 						src="/ministries_3.avif"
 						alt="Young Adults"
 						class="w-full h-full object-cover object-top"
@@ -74,7 +85,7 @@
 				class="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
 			>
 				<div class="aspect-video overflow-hidden">
-					<img
+					<OptimizedImage
 						src="/ministries_4.avif"
 						alt="Ladies Night Ministry"
 						class="w-full h-full object-cover object-center"

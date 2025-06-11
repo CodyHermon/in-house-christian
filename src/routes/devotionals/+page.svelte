@@ -1,3 +1,7 @@
+<script>
+	import OptimizedImage from "$lib/components/ui/OptimizedImage.svelte";
+</script>
+
 <div class="container mx-auto px-4 py-8 max-w-4xl">
 	<!-- Header -->
 	<header class="text-center mb-16">
@@ -8,10 +12,12 @@
 
 	<!-- First Image -->
 	<div class="mb-12">
-		<img
+		<OptimizedImage
 			src="/devotional_3.jpg"
 			alt="Sunset landscape"
 			class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+			fetchpriority="high"
+			loading="eager"
 		/>
 	</div>
 
@@ -47,7 +53,7 @@
 
 		<!-- Second Image -->
 		<div class="my-12 flex justify-center">
-			<img
+			<OptimizedImage
 				src="/devotional_2.avif"
 				alt="Devotional reflection"
 				class="h-64 md:h-80 object-contain rounded-lg shadow-lg"
