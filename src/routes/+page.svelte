@@ -13,11 +13,20 @@
 </svelte:head>
 
 <!-- Hero Section -->
-<section
-	class="text-center py-16 bg-cover bg-center bg-no-repeat relative min-h-screen"
-	style="background-image: url('home.jpg'); height: calc(100vh - 80px);"
->
-	<div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/80"></div>
+<section class="relative text-center py-16 min-h-screen overflow-hidden">
+	<img
+		src="/home.jpg"
+		alt="In-House Christian Foursquare Church - Beautiful church interior"
+		class="absolute inset-0 w-full h-full object-cover"
+		style="height: calc(100vh - 80px);"
+		loading="eager"
+		fetchpriority="high"
+		decoding="async"
+	/>
+	<div
+		class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/80"
+		style="height: calc(100vh - 80px);"
+	></div>
 	<div
 		class="relative z-10 container mx-auto px-4 flex flex-col justify-center items-center min-h-full"
 	>

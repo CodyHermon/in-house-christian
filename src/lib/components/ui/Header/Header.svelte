@@ -22,7 +22,7 @@
 
 <header class="sticky top-0 z-50 bg-white shadow-sm border-b">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="flex justify-between items-center h-20 py-4">
+		<div class="flex justify-between items-center h-[79px] py-4">
 			<div class="flex items-center flex-1 min-w-0">
 				<a href="/" class="flex items-center space-x-3">
 					<img
