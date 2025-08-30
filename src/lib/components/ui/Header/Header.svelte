@@ -25,7 +25,13 @@
 		<div class="flex justify-between items-center h-20 py-4">
 			<div class="flex items-center flex-1 min-w-0">
 				<a href="/" class="flex items-center space-x-3">
-					<img src="/logo.png" alt="Foursquare Church Logo" class="h-14 w-14 flex-shrink-0" />
+					<img
+						src="/logo-56.png"
+						srcset="/logo-56.png 1x, /logo-112.png 2x"
+						alt="In-House Christian Foursquare Church Logo"
+						class="h-14 w-14 flex-shrink-0"
+						fetchpriority="high"
+					/>
 					<div class="text-lg lg:text-xl font-bold font-heading hidden min-[300px]:block">
 						In-House Christian Foursquare Church
 					</div>

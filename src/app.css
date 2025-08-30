@@ -134,4 +134,8 @@
 	.font-body {
 		font-family: "Lora", serif;
 	}
+
+	img {
+		@apply max-w-full h-auto;
+	}
 }
