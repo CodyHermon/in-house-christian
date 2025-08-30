@@ -59,7 +59,7 @@
 	<section class="pt-16 bg-gray-50">
 		<div class="max-w-4xl mx-auto">
 			<div class="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-				<video class="w-full h-full object-cover" controls preload="metadata" poster="/home.jpg">
+				<video class="w-full h-full object-cover" controls preload="metadata" poster="/home.avif">
 					<source
 						src="https://video.wixstatic.com/video/cac8c5_3ac6871cfc6e4ae382966aeaf22bf57c/1080p/mp4/file.mp4"
 						type="video/mp4"
