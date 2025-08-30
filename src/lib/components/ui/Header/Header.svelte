@@ -2,6 +2,7 @@
 	import { Sheet, SheetContent, SheetTrigger } from "$lib/components/ui/sheet";
 	import { page } from "$app/state";
 	import { Menu } from "@lucide/svelte";
+	import OptimizedImage from "../OptimizedImage.svelte";
 
 	const navigation = [
 		{ name: "Home", href: "/" },
@@ -25,12 +26,15 @@
 		<div class="flex justify-between items-center h-[79px] py-4">
 			<div class="flex items-center flex-1 min-w-0">
 				<a href="/" class="flex items-center space-x-3">
-					<img
+					<OptimizedImage
 						src="/logo-56.png"
-						srcset="/logo-56.png 1x, /logo-112.png 2x"
 						alt="In-House Christian Foursquare Church Logo"
-						class="h-14 w-14 flex-shrink-0"
+						class="h-14 w-14 flex-shrink-0 object-contain"
+						skeletonClass="h-14 w-14 flex-shrink-0 rounded-md"
+						loading="eager"
 						fetchpriority="high"
+						width={56}
+						height={56}
 					/>
 					<div class="text-lg lg:text-xl font-bold font-heading hidden min-[300px]:block">
 						In-House Christian Foursquare Church

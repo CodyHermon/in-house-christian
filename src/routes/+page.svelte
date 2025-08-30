@@ -1,6 +1,7 @@
 <script>
 	import { Button } from "$lib/components/ui/button";
 	import { Card, CardContent, CardDescription, CardTitle } from "$lib/components/ui/card";
+	import OptimizedImage from "$lib/components/ui/OptimizedImage.svelte";
 	import { School, Church, BookOpen } from "@lucide/svelte";
 </script>
 
@@ -14,18 +15,16 @@
 
 <!-- Hero Section -->
 <section class="relative text-center py-16 min-h-screen overflow-hidden">
-	<img
+	<OptimizedImage
 		src="/home.jpg"
 		alt="In-House Christian Foursquare Church - Beautiful church interior"
-		class="absolute inset-0 w-full h-full object-cover"
-		style="height: calc(100vh - 80px);"
+		class="absolute inset-0 w-full object-cover hero-image"
+		skeletonClass="absolute inset-0 w-full hero-image"
 		loading="eager"
 		fetchpriority="high"
-		decoding="async"
 	/>
 	<div
-		class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/80"
-		style="height: calc(100vh - 80px);"
+		class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/80 hero-overlay"
 	></div>
 	<div
 		class="relative z-10 container mx-auto px-4 flex flex-col justify-center items-center min-h-full"
@@ -138,5 +137,10 @@
 <style>
 	.container {
 		max-width: 1200px;
+	}
+
+	:global(.hero-image),
+	.hero-overlay {
+		height: calc(100vh - 80px);
 	}
 </style>
