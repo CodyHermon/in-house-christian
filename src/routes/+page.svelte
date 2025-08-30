@@ -16,7 +16,7 @@
 <!-- Hero Section -->
 <section class="relative text-center py-16 min-h-screen overflow-hidden">
 	<OptimizedImage
-		src="/home.jpg"
+		src="/home.avif"
 		alt="In-House Christian Foursquare Church - Beautiful church interior"
 		class="absolute inset-0 w-full object-cover hero-image"
 		skeletonClass="absolute inset-0 w-full hero-image"
