@@ -10,19 +10,36 @@
 		name="description"
 		content="Welcome to In-House Christian Foursquare Church in Surrey, BC. Our mission is to bring our family, friends, and neighbours into a loving relationship with Jesus."
 	/>
-	<link rel="preload" as="image" href="/home.avif" fetchpriority="high" />
+	<link rel="dns-prefetch" href="//video.wixstatic.com" />
+	<link
+		rel="preload"
+		as="image"
+		href="/home-mobile.avif"
+		media="(max-width: 768px)"
+		fetchpriority="high"
+	/>
+	<link
+		rel="preload"
+		as="image"
+		href="/home.avif"
+		media="(min-width: 769px)"
+		fetchpriority="high"
+	/>
 </svelte:head>
 
 <!-- Hero Section -->
 <section class="relative text-center py-16 min-h-screen overflow-hidden">
-	<img
-		src="/home.avif"
-		alt="In-House Christian Foursquare Church - Beautiful church interior"
-		class="absolute inset-0 w-full h-full object-cover hero-image"
-		loading="eager"
-		fetchpriority="high"
-		decoding="sync"
-	/>
+	<picture>
+		<source media="(max-width: 768px)" srcset="/home-mobile.avif" type="image/avif" />
+		<img
+			src="/home.avif"
+			alt="In-House Christian Foursquare Church - Beautiful church interior"
+			class="absolute inset-0 w-full h-full object-cover hero-image"
+			loading="eager"
+			fetchpriority="high"
+			decoding="sync"
+		/>
+	</picture>
 	<div
 		class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/80 hero-overlay"
 	></div>
@@ -59,7 +76,12 @@
 	<section class="pt-16 bg-gray-50">
 		<div class="max-w-4xl mx-auto">
 			<div class="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-				<video class="w-full h-full object-cover" controls preload="metadata" poster="/home.avif">
+				<video
+					class="w-full h-full object-cover"
+					controls
+					preload="none"
+					poster="/home-mobile.avif"
+				>
 					<source
 						src="https://video.wixstatic.com/video/cac8c5_3ac6871cfc6e4ae382966aeaf22bf57c/1080p/mp4/file.mp4"
 						type="video/mp4"
