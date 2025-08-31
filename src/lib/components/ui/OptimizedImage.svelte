@@ -9,6 +9,7 @@
 		skeletonClass?: string;
 		loading?: "lazy" | "eager";
 		fetchpriority?: "high" | "low" | "auto";
+		decoding?: "sync" | "async" | "auto";
 		sizes?: string;
 		width?: number;
 		height?: number;
@@ -21,6 +22,7 @@
 		skeletonClass = "",
 		loading = "lazy",
 		fetchpriority = "auto",
+		decoding = "auto",
 		sizes,
 		width,
 		height,
@@ -29,7 +31,7 @@
 
 	let imageLoaded = $state(false);
 	let imageError = $state(false);
-	let imgElement: HTMLImageElement;
+	let imgElement = $state<HTMLImageElement>();
 
 	function handleLoad() {
 		// Use requestAnimationFrame to avoid forced reflow
@@ -67,6 +69,7 @@
 		{alt}
 		{loading}
 		{fetchpriority}
+		{decoding}
 		{sizes}
 		{width}
 		{height}

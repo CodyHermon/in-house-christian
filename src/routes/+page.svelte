@@ -11,6 +11,7 @@
 		name="description"
 		content="Welcome to In-House Christian Foursquare Church in Surrey, BC. Our mission is to bring our family, friends, and neighbours into a loving relationship with Jesus."
 	/>
+	<link rel="preload" as="image" href="/home.avif" fetchpriority="high" />
 </svelte:head>
 
 <!-- Hero Section -->
@@ -22,6 +23,7 @@
 		skeletonClass="absolute inset-0 w-full hero-image"
 		loading="eager"
 		fetchpriority="high"
+		decoding="sync"
 	/>
 	<div
 		class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/80 hero-overlay"
