@@ -13,6 +13,7 @@
 		sizes?: string;
 		width?: number;
 		height?: number;
+		srcset?: string;
 	}
 
 	let {
@@ -26,6 +27,7 @@
 		sizes,
 		width,
 		height,
+		srcset,
 		...restProps
 	}: Props = $props();
 
@@ -71,6 +73,7 @@
 		{fetchpriority}
 		{decoding}
 		{sizes}
+		{srcset}
 		{width}
 		{height}
 		class={`${className} ${imageLoaded ? "opacity-100" : "opacity-0"} transition-opacity duration-300`}
