@@ -143,4 +143,8 @@
 	.hero-overlay {
 		height: calc(100vh - 80px);
 	}
+
+	:global(.hover\\:shadow-xl:hover) {
+		transform: translateY(-0.5rem);
+	}
 </style>

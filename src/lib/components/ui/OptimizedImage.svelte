@@ -32,7 +32,10 @@
 	let imgElement: HTMLImageElement;
 
 	function handleLoad() {
-		imageLoaded = true;
+		// Use requestAnimationFrame to avoid forced reflow
+		requestAnimationFrame(() => {
+			imageLoaded = true;
+		});
 	}
 
 	function handleError() {
