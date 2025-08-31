@@ -59,21 +59,23 @@
 	<Skeleton class={`${className} ${skeletonClass}`} />
 {/if}
 
-<!-- Actual image -->
-<img
-	bind:this={imgElement}
-	{src}
-	{alt}
-	{loading}
-	{fetchpriority}
-	{sizes}
-	{width}
-	{height}
-	class={`${className} ${imageLoaded ? "opacity-100" : "opacity-0"} transition-opacity duration-300`}
-	onload={handleLoad}
-	onerror={handleError}
-	{...restProps}
-/>
+{#if imageLoaded}
+	<!-- Actual image -->
+	<img
+		bind:this={imgElement}
+		{src}
+		{alt}
+		{loading}
+		{fetchpriority}
+		{sizes}
+		{width}
+		{height}
+		class={`${className} ${imageLoaded ? "opacity-100" : "opacity-0"} transition-opacity duration-300`}
+		onload={handleLoad}
+		onerror={handleError}
+		{...restProps}
+	/>
+{/if}
 
 {#if imageError}
 	<div class={`${className} bg-gray-100 flex items-center justify-center text-gray-400`}>
