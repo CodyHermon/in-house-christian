@@ -1,8 +1,10 @@
 <script>
 	import { Button } from "$lib/components/ui/button";
 	import { Card, CardContent, CardDescription, CardTitle } from "$lib/components/ui/card";
-	import OptimizedImage from "$lib/components/ui/OptimizedImage.svelte";
+	import { Skeleton } from "$lib/components/ui/skeleton";
 	import { School, Church, BookOpen } from "@lucide/svelte";
+
+	let imageLoaded = $state(false);
 </script>
 
 <svelte:head>
@@ -37,17 +39,27 @@
 
 <!-- Hero Section -->
 <section class="relative text-center py-16 min-h-screen overflow-hidden">
-	<OptimizedImage
-		src="/home.avif"
-		srcset="/home-small-mobile.avif 480w, /home-mobile.avif 768w, /home.avif 1920w"
-		sizes="100vw"
-		alt="In-House Christian Foursquare Church - Beautiful church interior"
-		class="absolute inset-0 w-full h-full object-cover hero-image"
-		skeletonClass="absolute inset-0 w-full h-full"
-		loading="eager"
-		fetchpriority="high"
-		decoding="sync"
-	/>
+	{#if !imageLoaded}
+		<Skeleton class="absolute inset-0 w-full h-full" />
+	{/if}
+
+	<!-- Hero Image using <picture> and <img> -->
+	<picture>
+		<source media="(max-width: 480px)" srcset="/home-small-mobile.avif" type="image/avif" />
+		<source media="(max-width: 768px)" srcset="/home-mobile.avif" type="image/avif" />
+		<img
+			src="/home.avif"
+			alt="In-House Christian Foursquare Church - Beautiful church interior"
+			class="absolute inset-0 w-full h-full object-cover hero-image transition-opacity duration-300 {imageLoaded
+				? 'opacity-100'
+				: 'opacity-0'}"
+			loading="eager"
+			fetchpriority="high"
+			decoding="sync"
+			onload={() => (imageLoaded = true)}
+			onerror={() => (imageLoaded = true)}
+		/>
+	</picture>
 	<div
 		class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/80 hero-overlay"
 	></div>
