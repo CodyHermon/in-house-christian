@@ -15,8 +15,15 @@
 	<link
 		rel="preload"
 		as="image"
+		href="/home-small-mobile.avif"
+		media="(max-width: 480px)"
+		fetchpriority="high"
+	/>
+	<link
+		rel="preload"
+		as="image"
 		href="/home-mobile.avif"
-		media="(max-width: 768px)"
+		media="(min-width: 481px) and (max-width: 768px)"
 		fetchpriority="high"
 	/>
 	<link
@@ -32,7 +39,7 @@
 <section class="relative text-center py-16 min-h-screen overflow-hidden">
 	<OptimizedImage
 		src="/home.avif"
-		srcset="/home-mobile.avif 768w, /home.avif 1920w"
+		srcset="/home-small-mobile.avif 480w, /home-mobile.avif 768w, /home.avif 1920w"
 		sizes="100vw"
 		alt="In-House Christian Foursquare Church - Beautiful church interior"
 		class="absolute inset-0 w-full h-full object-cover hero-image"
